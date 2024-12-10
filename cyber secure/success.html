@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberShield - Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link to a cybersecurity-themed icon font or CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="nav-bar">
+            <h1>🔐 CyberShield Security</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Contact Form Section -->
+    <div class="container">
+        <h2>Get In Touch with CyberShield</h2>
+        <p>Your security is our top priority. Reach out to us for inquiries, consultations, or cybersecurity solutions.</p>
+
+        <form id="contactForm" onsubmit="return validateForm()">
+            <!-- Email Field -->
+            <div class="form-group">
+                <label for="email"><i class="fas fa-envelope"></i> Email Address:</label>
+                <input type="email" id="email" placeholder="Your email (e.g., example@domain.com)" required>
+            </div>
+
+            <!-- Phone Field -->
+            <div class="form-group">
+                <label for="phone"><i class="fas fa-phone"></i> Phone Number:</label>
+                <input type="tel" id="phone" placeholder="Your phone number" required>
+            </div>
+
+            <!-- Security Message -->
+            <div class="form-group">
+                <label for="message"><i class="fas fa-comment-dots"></i> Your Message:</label>
+                <textarea id="message" rows="4" placeholder="Tell us how we can assist you..." required></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn">Send Secure Message</button>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 CyberShield Security | Protecting Your Digital World 🌐</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

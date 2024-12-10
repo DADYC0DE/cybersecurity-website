@@ -1,0 +1,132 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #121212; /* Dark background for cybersecurity theme */
+    color: #d9d9d9; /* Light grey text for contrast */
+    line-height: 1.6;
+}
+
+/* Navbar Styling */
+.navbar {
+    margin-bottom: 20px;
+    background-color: #1f1f1f; /* Dark navbar */
+    border-bottom: 2px solid #00d1b2; /* Cyber green highlight */
+}
+
+.navbar a {
+    color: #00d1b2; /* Cyber green */
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Hero Carousel Styling */
+.carousel-inner img {
+    width: 100%; /* Make image take full width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the area without stretching */
+    filter: grayscale(50%) contrast(120%); /* Edgy look */
+    max-height: 500px; /* Set a maximum height to prevent oversized images */
+}
+
+/* Security Alert Animation */
+.animated-box {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #ff4d4d; /* Red for alert */
+    margin: 20px auto;
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 10px 5px #ff4d4d;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); box-shadow: 0 0 10px 5px #ff4d4d; }
+    50% { transform: scale(1.1); box-shadow: 0 0 15px 7px #ff0000; }
+    100% { transform: scale(1); box-shadow: 0 0 10px 5px #ff4d4d; }
+}
+
+/* Secure Text Animation */
+#animated-text {
+    position: relative;
+    color: #00d1b2; /* Cyber green for secure feel */
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 5px #00d1b2, 0 0 10px #00b295, 0 0 20px #00d1b2; }
+    to { text-shadow: 0 0 10px #00b295, 0 0 20px #00d1b2, 0 0 30px #00b295; }
+}
+
+/* Comment Section */
+#comment-section {
+    background-color: #1e1e1e; /* Slightly lighter than body */
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #00d1b2;
+    box-shadow: 0px 0px 10px 3px rgba(0, 209, 178, 0.5);
+}
+
+#comments-container ul {
+    margin-top: 20px;
+    padding-left: 0;
+}
+
+.comment-item {
+    border-bottom: 1px solid #333;
+    padding: 10px 0;
+}
+
+.comment-item:last-child {
+    border-bottom: none;
+}
+
+.comment-author {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #00d1b2; /* Author name in cyber green */
+}
+
+.comment-text {
+    margin-bottom: 10px;
+    color: #ccc; /* Lighter grey text */
+}
+
+/* Cybersecurity Features Section */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.feature-box {
+    background-color: #1f1f1f;
+    padding: 20px;
+    width: 300px;
+    margin: 10px;
+    border: 2px solid #00d1b2;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 20px 5px rgba(0, 209, 178, 0.5);
+}
+
+.feature-title {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #00d1b2;
+}
+
+.feature-description {
+    font-size: 1rem;
+    color: #d9d9d9;
+}
